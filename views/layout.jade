@@ -1,0 +1,54 @@
+doctype
+html
+  head
+    title #{title} - My Site
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    script(src="https://code.jquery.com/jquery-1.10.2.js")
+    script(type='text/javascript').
+      $( document ).ready(function() {
+            var icon = $(".nav-img");
+            icon.css("-webkit-animation","img-intro 0.5s" + icon.index()*0.1 + "s ease-out forwards");
+            $(".nav").hover(function() {
+              $( this ).children(".nav-img").addClass("img-fade");
+            },
+            function() {
+              $( this ).children(".nav-img").removeClass("img-fade");
+            });
+      });
+
+    body
+    .header
+      .navigation
+        a#home.nav
+          .home-img.nav-img
+          .nav-txt Home
+        a#product.nav
+          .product-img.nav-img
+          .nav-txt  Our products
+        a#us.nav
+          .us-img.nav-img
+          .nav-txt About us
+        a#contact.nav
+          .contact-img.nav-img
+          .nav-txt Reach us
+    .main
+      .main-right
+      
+        .products.choices
+          .products-img
+        .products-hide.choices-hide
+        .products-container.choices-container
+          .products-icon.choices-icon
+          .products-text.choices-text Produits
+          
+        .compatibility.choices
+        .compatibility-hide.choices-hide
+        .compatibility-container.choices-container
+          .compatibility-icon.choices-icon
+          .compatibility-text.choices-text Compatibilité
+          
+        .fonctions.choices
+      .main-left
+        .title LE TRANSPORT COMME JAMAIS VU
+        .body La première entreprise de transport au Maroc offrant à la fois une expertise et une qualité de service incomparable assisté avec un sytème informatique offrant une visibilité illimitée sur vos biens
+    footer

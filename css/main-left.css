@@ -1,0 +1,31 @@
+/* line 3, ../sass/main-left.scss */
+.title {
+  position: absolute;
+  display: inline-block;
+  top: 10%;
+  left: 23%;
+  width: 54%;
+  font-family: "entsani";
+  color: #3dc1d6;
+  font-style: italic;
+  font-weight: 900;
+  font-size: 56px;
+  padding: 0 0 0 0;
+  margin: 0 0 0 0;
+}
+
+/* line 18, ../sass/main-left.scss */
+.body {
+  position: absolute;
+  display: inline-block;
+  top: 70%;
+  left: 23%;
+  width: 60%;
+  font-family: "Roboto";
+  color: black;
+  font-style: italic;
+  font-weight: 200;
+  font-size: 26px;
+  padding: 0 0 0 0;
+  margin: 0 0 0 0;
+}
